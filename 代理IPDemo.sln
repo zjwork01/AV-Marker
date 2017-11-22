@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demo", "demo\demo.csproj", "{ED09C5B6-085E-4E1E-BAA6-C138DC64C904}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AVMarker", "AVMarker\AVMarker.csproj", "{9AEF52BE-B5A6-4337-94E6-7D35CB5E0457}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marker", "Marker\Marker.csproj", "{EABE84D0-6A24-4EB1-A500-F920FD519EF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED09C5B6-085E-4E1E-BAA6-C138DC64C904}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED09C5B6-085E-4E1E-BAA6-C138DC64C904}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED09C5B6-085E-4E1E-BAA6-C138DC64C904}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED09C5B6-085E-4E1E-BAA6-C138DC64C904}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AEF52BE-B5A6-4337-94E6-7D35CB5E0457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AEF52BE-B5A6-4337-94E6-7D35CB5E0457}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AEF52BE-B5A6-4337-94E6-7D35CB5E0457}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AEF52BE-B5A6-4337-94E6-7D35CB5E0457}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABE84D0-6A24-4EB1-A500-F920FD519EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABE84D0-6A24-4EB1-A500-F920FD519EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABE84D0-6A24-4EB1-A500-F920FD519EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABE84D0-6A24-4EB1-A500-F920FD519EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
