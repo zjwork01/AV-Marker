@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Marker
 {
-    class Tool
+    public class Tool
     {
 
         private static string filepath = string.Empty;

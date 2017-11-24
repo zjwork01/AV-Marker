@@ -6,69 +6,31 @@ using System.Threading.Tasks;
 
 namespace Marker
 {
+    /// <summary>
+    /// 站点信息
+    /// </summary>
     public class MSite
     {
-        private string ip;
-        public string IP
-        {
-            get
-            {
-                return ip;
-            }
-            set
-            {
-                this.ip = value;
-            }
-        }
-
-        private int level;
         /// <summary>
-        /// 链接等级 根目录等级为0，依次延伸
+        /// 当前节点的链接地址
         /// </summary>
-        public int Level
-        {
-            get { return level; }
-            set { level = value; }
-        }
-
-        private string domain;
+        public string URL;
         /// <summary>
-        /// 域名
+        /// 浏览标识符，True:该链接已经被浏览   False:该链接还未被浏览
         /// </summary>
-        public string DoMain
-        {
-            get
-            {
-                return domain;
-            }
-        }
-
-        private string url;
+        public bool HasVisited;
         /// <summary>
-        /// 链接地址
+        /// 当前链接的等级，0为根节点
         /// </summary>
-        public string URL
-        {
-            get { return url; }
-            set
-            {
-                this.url = value.ToLower();
-                if (url != "" && level == 0)
-                {
-                    this.domain = Tool.SubStringURL(url);
-                }
-                if (!Tool.IsContainsORG(url))
-                {
-                    if (Tool.IsContainsORG(domain))
-                    {
-                        url = domain + url;
-                    }
-                }
-            }
-        }
+        public int Level;
         /// <summary>
-        /// 表示是否已访问 True：已访问 False：未访问 默认为False
+        /// 当前节点的父节点
         /// </summary>
-        public bool HasVisited { get; set; }
+        public MSite Parents;
+        /// <summary>
+        /// 当前节点的孩子节点
+        /// </summary>
+        public List<MSite> Childen;
+        
     }
 }
